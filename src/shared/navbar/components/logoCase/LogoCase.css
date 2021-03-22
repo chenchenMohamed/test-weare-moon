@@ -3,6 +3,7 @@
     height: 40%;
     margin:auto 0px;
     display: flex;
+    max-width: 100%;
 }
 
 .logo{

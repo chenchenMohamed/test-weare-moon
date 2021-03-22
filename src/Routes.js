@@ -20,8 +20,6 @@ function Routes (props) {
     <Router>
       <div>
         
-        <Navbar />
-
         <Switch>
    
            <Route exact path="/">

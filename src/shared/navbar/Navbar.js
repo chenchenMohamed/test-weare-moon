@@ -54,7 +54,7 @@ function Navbar (props) {
                            <span> Accueil </span> 
                         </li>
                         
-                        <li class="navbar-dessous center-text-contact">
+                        <li class="navbar-dessous center-text-contact boutique">
                            <span class="contact-transparent"> Boutique transparent </span>
 
                            <ul class="list-boutique">

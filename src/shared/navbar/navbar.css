@@ -1,10 +1,12 @@
 .navbar-style{
-    background-color: white;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
 }
 
 .block-1{
-    height: 70px;
-    border: rgb(177, 177, 177) 1px solid;
+    height: 5vw;
+    border: rgb(177, 177, 177) 0.1vw solid;
     background-color: white;
     z-index: 10;
     position: relative;
@@ -21,11 +23,15 @@
 }
 
 .block-2{
-    height: 50px;
+    height: 3.4vw;
     padding: 0px;
-    z-index: 1;
-    border-bottom: rgb(177, 177, 177) 1px solid;
+    z-index: 8;
+    border-bottom: rgb(177, 177, 177) 0.1vw solid;
+    background-color: white;
 }
+
+
+
 
 .case{
     height: 100%;
@@ -37,26 +43,26 @@
 
 .col-logo{
     width:25%;
-    border-right: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 0.1vw solid;
 }
 
 .col-recherche{
     overflow: hidden;
     width:37%;
-    border-right: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 0.1vw solid;
     
 }
 
 .col-magasin{
     overflow: hidden;
     width:19%;
-    border-right: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 0.1vw solid;
 }
 
 .col-configurateur{
     overflow: hidden;
     width:19%;
-    border-right: rgb(177, 177, 177) 1px solid;
+    border-right: rgb(177, 177, 177) 0.1vw solid;
     background-color: green;
 }
 
@@ -70,8 +76,8 @@
 
 .center-text-accueil{
     text-align: center;
-    padding-top: 12px;
-    font-size: 17px;
+    padding-top: 0.7vw;
+    font-size: 1.2vw;
 }
 
 .center-text-accueil:hover{
@@ -81,9 +87,9 @@
 
 .center-text-contact{
     text-align: center;
-    font-size: 17px;
+    font-size: 1.2vw;
     padding:0px;
-    padding-top: 12px;
+    padding-top: 0.7vw;
     position: relative;
 }
 
@@ -97,9 +103,8 @@
 .navbar-dessous{
     display: inline-block;
     width:25%;
-    border-left: rgb(177, 177, 177) 1px solid;
-    border-left: rgb(177, 177, 177) 1px solid;
-    height: 50px;
+    border-left: rgb(177, 177, 177) 0.1vw solid;
+    height: 3.4vw;
     margin-top: 0px;
 }
 
@@ -107,26 +112,27 @@
 
 
 .modal-contact{
-    height: 565px;
+    height: 37vw;
     position: absolute;
     width: 100%;
-    z-index: 2;
-    top:-515px;
-    border: rgb(177, 177, 177) 1px solid;
+    z-index: 8;
+    top:-33.6vw;
+    border: rgb(177, 177, 177) 0.1vw solid;
     transition: 0.3s ease-in-out;
+    background-color: white;
 }
 
 .modal-contact:hover{
-    -webkit-transform: translate(0px,515px);
-    -moz-transform: translate(0px,515px);
-    -o-transform: translate(0px,515px);
-    -ms-transform: translate(0px,515px);
-    transform: translate(0px,515px);
+    -webkit-transform: translate(0px,33.6vw);
+    -moz-transform: translate(0px,33.6vw);
+    -o-transform: translate(0px,33.6vw);
+    -ms-transform: translate(0px,33.6vw);
+    transform: translate(0px,33.6vw);
 }
 
 .modal-contact img{
     width: 100%;
-    height: 200px;
+    height: 12vw;
 }
 
 .contact-transparent{
@@ -135,37 +141,38 @@
 
 .modal-contact p{
     text-align: left;
-    font-size: 14px;
-    padding: 5px 0px;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 0.4vw 0px;
 }
 
 .modal-contact input{
     border-top:none ;
     border-left:none;
     border-right: none;
-    font-size: 15px;
+    font-size: 1vw;
+    height: 1.3vw;
     width: 100%;
-    margin:5px 0px;
-    border-bottom: 1px solid rgb(177, 177, 177) ;
+    margin:0.4vw 0px;
+    border-bottom: 0.1vw solid rgb(177, 177, 177) ;
 }
 
 .modal-contact textarea{
-    font-size: 15px;
+    font-size: 1vw;
     width: 100%;
-    height: 100px;
-    margin:5px 0px;
-    border: rgb(177, 177, 177) 1px solid;
-
+    height: 6vw;
+    margin:0.7vw 0px;
+    border: rgb(177, 177, 177) 0.1vw solid;
 }
 
 .sous-modal-contact{ 
- padding: 20px;
- width: 100%;   
+   padding: 1.3vw;
+   width: 100%;   
 }
 
 .label-message{
     color: rgb(82, 80, 80);
-    font-size: 15px;
+    font-size: 1.2vw;
     margin-bottom:0px;
     padding:0px;
 }
@@ -181,8 +188,8 @@
     bottom: 0px;
     left: 0px;
     width: 100%;
-    height: 50px;
-    padding-top: 10px;
+    height: 3.4vw;
+    padding-top: 0.85vw;
     
     visibility: visible;
     opacity: 1;
@@ -195,7 +202,7 @@
     left: 0px;
     width: 100%;
     background-color: green;
-    height: 50px;
+    height: 3.4vw;
     border: none;
     color: white;
 
@@ -220,15 +227,19 @@
  .modal-contact-body label{
      color: white;
      position: absolute;
-     top:80px;
+     top:4vw;
+     bottom:0;
+
      width: 100%;
-     left:0px;
-     text-align: center;
+     left: 0;
+     right: 0;
+     margin:auto;
+     font-size: 1.2vw;
  } 
 
  .description-contact{
 
-     height: 60px;
+     height: 4vw;
      font-size: 1vw !important;
  }
 
@@ -237,51 +248,53 @@
 /*   ----------------- modal-boutique-start --------------             */
 
 .modal-boutique{
-    height: 300px;
+    height: 20vw;
     position: absolute;
     width: 100%;
     left:0px;
-    z-index: 2;
-    top:-253px;
+    z-index: 8;
+    top:-16.6vw;
     border: none;
     transition: 0.1s ease-in-out;
     padding: 0px;
 }
 
 .modal-boutique:hover{
-    -webkit-transform: translate(0px,250px);
-    -moz-transform: translate(0px,250px);
-    -o-transform: translate(0px,250px);
-    -ms-transform: translate(0px,250px);
-    transform: translate(0px,250px);
+    -webkit-transform: translate(0px,16.6vw);
+    -moz-transform: translate(0px,16.6vw);
+    -o-transform: translate(0px,16.6vw);
+    -ms-transform: translate(0px,16.6vw);
+    transform: translate(0px,16.6vw);
 }
 
 .list-boutique{
-    height: 200px;
+    height: 20vw;
     position: absolute;
     width: 100%;
-    z-index: 3;
-    top:50px;
+    z-index: 10;
+    top:3.4vw;
     left:0px;
     border: none;
     padding: 0px;
     text-decoration: none;
     list-style: none;
+    visibility: hidden;
+    display: block;
 }
 
-.modal-boutique:hover .list-boutique{
-    display: block;
+.boutique:hover .list-boutique{
+    visibility: visible;
 }
 
 .list-boutique li {
     width: 100%;
-    padding:2px;
+    padding:0.1vw;
     color: white;
 }
 
 .modal-boutique img{
     width: 100%;
-    height: 250px;
+    height: 16.6vw;
 }
 
 .modal-boutique button{
@@ -292,7 +305,7 @@
     text-align: center;
     padding: 0px;
     margin:0px;
-    height: 50px;
+    height: 3.4vw;
     border: none;
 }
 
